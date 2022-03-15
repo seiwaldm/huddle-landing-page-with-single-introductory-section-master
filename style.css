@@ -83,12 +83,10 @@ button:active {
 
 i {
   font-size: 0.9rem;
-  /* padding: 1rem; */
   border: 1px solid white;
   border-radius: 50%;
   width: 30px;
   aspect-ratio: 1;
-  position: relative;
   margin-inline: 5px;
 }
 

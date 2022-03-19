@@ -13,7 +13,7 @@
   width: 100vw;
   position: absolute;
   z-index: 1;
- opacity: 0.5;
+  opacity: 0.5;
   left: 0;
   top: 0;
 }
@@ -29,9 +29,7 @@ img {
 body {
   color: white;
   background-color: hsl(257, 40%, 49%);
-  background-image: url(images/bg-mobile.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+
   font-family: "Open Sans", sans-serif;
   padding: 2rem;
   display: flex;
@@ -42,7 +40,6 @@ body {
   background-image: url(images/bg-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 body * {
@@ -71,8 +68,6 @@ p {
   align-self: flex-start;
 }
 
-
-
 .reg-btn {
   background-color: white;
   border-radius: 40px;
@@ -87,7 +82,6 @@ p {
 .reg-btn:active {
   background-color: hsl(300, 69%, 71%);
   color: white;
-
 }
 
 main {

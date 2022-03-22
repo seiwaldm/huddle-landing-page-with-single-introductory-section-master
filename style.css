@@ -9,17 +9,17 @@
   /* outline: 1px solid red; */
 }
 
-.vorlage {
-  width: 100vw;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.5;
-  left: 0;
-  top: 0;
-}
-
 img {
   max-width: 100%;
+}
+
+.vorlage {
+  width: 1440px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  left: 0;
+  top: 0;
 }
 
 /* -------------------- */
@@ -110,4 +110,60 @@ main {
 .social i:active {
   border-color: hsl(300, 69%, 71%);
   color: hsl(300, 69%, 71%);
+}
+
+/* -------------------- */
+/*       DESKTOP        */
+/* -------------------- */
+
+@media screen and (min-width: 769px) {
+  body {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    grid-template-rows: 150px 1fr 100px;
+    padding: 0 4rem;
+    column-gap: 2rem;
+    row-gap: 0;
+    align-items: center;
+    background-image: url(images/bg-desktop.svg);
+  }
+
+  body *:not(button) {
+    text-align: initial;
+  }
+
+  .logo {
+    grid-column: span 2;
+    align-self: center;
+    width: 200px;
+  }
+
+  .main {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .reg-btn {
+    font-size: 1.2rem;
+  }
+
+  .social {
+    grid-column: span 2;
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .social i {
+    width: 45px;
+    border-width: 2px;
+  }
 }
